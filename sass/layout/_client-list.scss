@@ -1,0 +1,31 @@
+.client-titule {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-bg-color;
+    border-radius: 4px;
+    &:hover {
+      border-color: $accent-color;
+    }
+    &:hover .client-list-icon {
+      fill: $accent-color;
+    }
+  }
+  &-icon {
+    fill: $icon-bg-color;
+  }
+}
